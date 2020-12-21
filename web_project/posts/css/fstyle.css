@@ -1,0 +1,39 @@
+.main_img {
+  height: 1080px;
+  border: 1px solid black;
+  background-image: url(../assets/img/img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.introduce {
+  margin-top: 300px;
+  margin-left: 300px;
+  font-size: 30px;
+  color: whitesmoke;
+  list-style: none;
+  word-break: keep-all;
+}
+
+.skip {
+  width: 80px;
+  margin-top: 450px;
+  margin-left: 20px;
+  font-size: 20px;
+  padding: 8px 12px;
+  text-align: center;
+  list-style: none;
+  color: whitesmoke;
+}
+
+.skip:hover {
+  background-color: aquamarine;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1080px) {
+  .introduce {
+    margin-left: 100px;
+  }
+}

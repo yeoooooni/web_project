@@ -1,0 +1,20 @@
+{% load static %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/fstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+<body>
+    <div class="main_img">
+        <li class="introduce">모두와 함께, 모든 분야와 함께 만들어가는 나만의 포트폴리오</li>
+        <div>
+        <form action="posts:main" method="POST">
+            {% include 'posts/_form.html' with form=form btn_value="skip" %}
+        </form>
+        </div>
+    </div>
+</body>
+{% endblock %}

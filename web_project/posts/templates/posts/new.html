@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <h1>
+            새로운 글 작성하기
+        </h1>
+        <form action="#" method="POST">
+            {% include 'posts/_form.html' with form=form btn_value="글생성" %}
+        </form>
+    </div>
+{% endblock %}
